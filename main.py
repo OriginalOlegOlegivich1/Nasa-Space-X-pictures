@@ -26,6 +26,6 @@ for i in range(10):
     picture_response.raise_for_status()
 
 
-    with open(f'наса/img/picture{i}.jpeg', "wb") as file:
+    with open(f'наса/picture{i}.jpeg', "wb") as file:
         file.write(picture_response.content)
     print(picture_url)
